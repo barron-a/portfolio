@@ -67,25 +67,23 @@ header nav ul li a:hover {
 
 .content-container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .section-title {
     font-size: 28px;
     color: #1e3155;
     padding: 20px 20px 20px 10px;
-    border: solid 6px #1e3155;
+    border-left: solid 6px #1e3155;
     display: flex;
     flex-wrap: wrap;
     width: 150px;
     margin: 0 auto;
 }
 
-.flex-column {
+.flex-row {
     display: flex;
-    padding: 20px;
+    padding: 30px;
 }
 
 .about-me p {
@@ -93,4 +91,25 @@ header nav ul li a:hover {
     align-items: center;
     font-size: 16px;
     padding: 10px;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-info ul li {
+    padding: 20px;
+}
+
+.contact-info ul li a {
+    justify-content: flex-end;
+    color: #63ace7;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid #63ace7;
 }
