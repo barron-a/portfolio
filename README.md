@@ -2,7 +2,7 @@
 
 ## Description
 
-Adam Barron's Portfolio is a website with link to sections titled "About Me", "Work", and Contact Me". The intent of the site is to give potential employers a look at my work and get to know a little bit about me.
+Adam Barron's Portfolio is a website with links to sections titled "About Me", "Work", and Contact Me". The intent of the site is to give potential employers a look at my work and to let them know a little about me as a person/employee.
 
 ## Visuals
 
