@@ -47,7 +47,6 @@ header nav ul li a {
     color: #d4d4d4;
     font-weight: lighter;
     font-size: 20px;
-    text-shadow: 5px;
 }
 
 header nav ul li a:hover {
@@ -232,8 +231,14 @@ footer h2 {
 .contact-info ul li a {
     justify-content: flex-end;
     color: #63ace7;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     padding: 5px;
     border-bottom: 2px solid #63ace7;
+}
+
+.contact-info ul li a:hover {
+    color: #1e3155;
+    font-weight: bolder;
+    border-bottom: 3px solid #1e3155;
 }
