@@ -13,11 +13,12 @@ body {
 header {
     padding: 10px 30px;
     background-color: #1e3155;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 header h1 {
@@ -66,6 +67,11 @@ header nav ul li a:hover {
     position: relative;
 }
 
+.headshot {
+    background-image: url(../images/adam-barron.jpg);
+    position: absolute;
+}
+
 .content-container {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +91,6 @@ header nav ul li a:hover {
 .flex-row {
     display: flex;
     padding: 30px;
-    justify-content: flex-end;
 }
 
 .about-me p {
@@ -95,30 +100,59 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .work-grid-wrapper {
     display: flex;
-    width: 100%;
+    width: max-content;
 }
 
 .work-grid-container {
-    width: 100%;
+    max-width: 900px;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(5, 4fr);
+    grid-template-rows: repeat(4, 2fr);
     grid-gap: 10px
 }
 
 .work-grid-item {
-    border: solid 2px #63ace7;
+    opacity: .4;
+    border: solid 2px #1e3155;
+    border-radius: 20px;
     padding: 5px;
     display: flex;
     color: #1e3155;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
-.one {
+.work-grid-item:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.work-grid-item p {
+    background-color: #d4d4d4;
+    border-radius: 15px;
+    border: 1px solid #e5ff00;
+    height: 45px;
+    padding: 10px;
+}
+
+.work-grid-item p:hover {
+    opacity: 1;
+}
+
+.work-grid-item a {
+    color: #1e3155;
+    text-decoration: none;
+}
+
+.run-buddy {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -128,7 +162,11 @@ header nav ul li a:hover {
     background-position: left top;
 }
 
-.two {
+.run-buddy:hover {
+    cursor: pointer;
+}
+
+.horiseon {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
@@ -136,20 +174,35 @@ header nav ul li a:hover {
     background-image: url(../images/horiseon.jpg);
     background-size: cover;
     background-position: 80% 80%;
+    font-size: 14px;
+    padding: 5px;
 }
 
-.three {
+.horiseon:hover {
+    cursor: pointer;
+}
+
+.stat-tracker {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
+    background-image: url(../images/stat-screen.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    font-size: 14px;
+    padding: 5px;
 }
 
-.four {
+.lyrical {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
+    background-image: url(../images/turntables.jpg);
+    background-size: cover;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .contact-info ul {
@@ -171,4 +224,34 @@ header nav ul li a:hover {
     text-decoration: none;
     padding: 5px;
     border-bottom: 2px solid #63ace7;
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
 }
