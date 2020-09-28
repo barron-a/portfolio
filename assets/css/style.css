@@ -54,6 +54,18 @@ header nav ul li a:hover {
     color: #63ace7;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1e3155;
+    width: 100%
+}
+
+footer h2 {
+    font-size: 14px;
+    color: #ffffff;
+}
+
 .hero {
     background-image: url(../images/hero-img.jpg);
     background-size: cover;
@@ -224,34 +236,4 @@ header nav ul li a:hover {
     text-decoration: none;
     padding: 5px;
     border-bottom: 2px solid #63ace7;
-}
-
-@media screen and (max-width: 575px) {
-    header {
-        width: 100%;
-    }
-
-    .section-title {
-        width: 95%
-    }
-
-    .intro p {
-        width: 100%;
-    }
-
-    .trainer {
-        flex: 0 100%;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-
-    .contact-info > * {
-        flex: 0 100%;
-    }
-
-    .contact-form {
-        order: 3;
-    }
 }
