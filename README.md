@@ -6,7 +6,7 @@ Adam Barron's Portfolio is a website with links to sections titled "About Me", "
 
 ## Visuals
 
-![Adam Barron Portfolio Screenshot](/assets/images/adam-barron-portfolio-screenshot.jpg)
+![Adam Barron Portfolio Screenshot](/assets/images/adam-barron-portfolio-screenshot-1.jpg)
 
 ## Technologies Used
 
