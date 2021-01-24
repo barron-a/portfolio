@@ -163,14 +163,30 @@ footer h2 {
     text-decoration: none;
 }
 
-.getaway {
+.dayspa {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 4;
+    background-image: url(../images/day-spa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dayspa:hover {
+    cursor: pointer;
+}
+
+.getaway {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
     background-image: url(../images/trip-plan.jpg);
     background-size: cover;
-    background-position: left top;
+    background-position: 80% 80%;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .getaway:hover {
@@ -178,13 +194,13 @@ footer h2 {
 }
 
 .run-buddy {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
     background-image: url(../images/run-buddy.jpg);
     background-size: cover;
-    background-position: 80% 80%;
+    background-position: bottom right;
     font-size: 14px;
     padding: 5px;
 }
@@ -194,30 +210,18 @@ footer h2 {
 }
 
 .horiseon {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
     background-image: url(../images/horiseon.jpg);
     background-size: cover;
-    background-position: bottom right;
     font-size: 14px;
     padding: 5px;
 }
 
 .horiseon:hover {
     cursor: pointer;
-}
-
-.lyrical {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-image: url(../images/turntables.jpg);
-    background-size: cover;
-    font-size: 14px;
-    padding: 5px;
 }
 
 .contact-info ul {
